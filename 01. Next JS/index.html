@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next JS</title>
+</head>
+<body>
+    <h1>Next JS</h1>
+    <p>
+        Next JS adalah framework berdasar React dengan kapabilitas render dari sisi server. Ini sangat cepat dan SEO friendly. Menggunakan Next JS kita bisa membuat aplikasi React lebih mudah dan cepat.
+    </p>
+    <p>
+        Next JS memiliki banyak kelebihan:
+    </p>
+    <ol>
+        <li><strong>Hot Code Reload</strong> - Dapat mendeteksi perubahan pada file dan melakukan reload secara otomatis</li>
+        <li><strong>Automatic Routing</strong> - Tidak perlu melakukan konfigurasi URL untuk routing. File hanya perlu diletakkan dalam halaman folder. Semua url akan dipetakan ke file system. Kustomisasi juga dapat dilakukan</li>
+        <li><strong>Component Spesific Styles</strong> - jsx dengan style memberikan style ke komponen global atau spesifik</li>
+        <li><strong>Server Side Rendering</strong> - Komponen react di render lebih awal di server sehingga memuat lebih cepat di client</li>
+        <li><strong>Node Ecosystem</strong> - Next js adalah berdasar react, sehingga berkaitan erat dengan ekosistem node</li>
+        <li><strong>Automatic Code Split</strong> - Next js merender halaman dengan library yang dibutuhkannya. Next js ketimbang membuat sebuah file javascript besar, lebih memilih untuk membuat banyak sumber daya. Ketika halaman dirender, hanya javascript yang dibutuhkan yang dimuat.</li>
+        <li><strong>Prefetch</strong> - prefetch memungkinkan Next.js untuk mengunduh dan mempersiapkan sumber daya yang dibutuhkan untuk halaman tujuan lebih awal, sehingga ketika pengguna akhirnya mengklik tautan, halaman tersebut dapat dimuat lebih cepat.</li>
+        <li><strong>Dynamic Components</strong> -  Next js mengijinkan kita untuk mengimport javascript module dan komponen react secara dinamis.  Ini berarti Anda dapat menunda pemuatan suatu komponen atau modul sampai komponen atau modul tersebut benar-benar dibutuhkan. Fitur ini sangat berguna untuk mengoptimalkan kinerja aplikasi dengan mengurangi ukuran bundle awal dan mempercepat waktu muat halaman.</li>
+        <li><strong>Export Static Page</strong> - Next.js memungkinkan Anda untuk mengekspor aplikasi web Anda sebagai situs statis penuh. Ini berarti Anda dapat mengonversi aplikasi Next.js menjadi kumpulan file HTML, CSS, dan JavaScript statis yang dapat di-host di server mana pun atau layanan hosting statis seperti Vercel, Netlify, atau GitHub Pages. </li>
+        <li><strong>Typescript Support</strong> - Next js mendukung typescript</li>
+    </ol>
+
+    <h2>Instalasi</h2>
+    <p>
+        Karena Next js adalah framework React, kita bisa menggunakan lingkungan Node. Kita bisa menginstall React dan Next bersamaan.
+    </p>
+    <pre>
+        npm install next react react-dom
+    </pre>
+    maka di dalam package.json akan berisi
+    <pre>
+        {
+            "name": "nextjs",
+            "version": "1.0.0",
+            "description": "",
+            "main": "index.js",
+            "dependencies": {
+               "next": "^9.4.4",
+               "react": "^16.13.1",
+               "react-dom": "^16.13.1"
+            },
+            "devDependencies": {},
+            "scripts": {
+               "test": "echo \"Error: no test specified\" && exit 1",
+               "dev": "next",
+               "build": "next build",
+               "start": "next start"
+            },
+            "author": "",
+            "license": "ISC"
+         }
+    </pre>
+    <h2>Membuat File Halaman</h2>
+    <p>
+        Kita bisa membuat sebuah folder dan membuat index.js.
+    </p>
+    <pre>
+        function HomePage() {
+           return &lt;div&gt;Welcome to Next.js!&lt;&#47;div&gt;
+        }
+        
+        export default HomePage
+    </pre>
+
+    <h2>Menjalankan Server Next.js</h2>
+    <p>
+        Untuk menjalankan server, kita bisa gunakan
+    </p>
+    <pre>
+        npm run dev
+    </pre>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
